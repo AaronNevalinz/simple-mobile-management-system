@@ -1,0 +1,88 @@
+# Mobile Money System (C Console Application)
+
+## Overview
+
+This project simulates a simple Mobile Money System using C programming language. The application allows users to interact with a menu-driven system, where they can send money, purchase airtime, make payments, and perform various other mobile money-related tasks. It demonstrates the use of `switch-case` statements, basic validation, and user input in C.
+
+## Features
+
+- **Send Money**: Users can send money to a mobile number or across regions (East Africa).
+- **Airtime & Bundles**: Allows users to buy airtime, data, and other bundles.
+- **MomoPay**: Accepts merchant code for payment.
+- **Payments**: Offers multiple payment options including utilities, school fees, and more.
+- **Savings & Loans**: Provides access to savings and loan services.
+- **Financial Services**: Includes banking services like deposits and withdrawals.
+- **Withdraw Money**: Allows users to withdraw money from ATMs or Western Union.
+- **My Account**: Provides options for checking balance, managing PIN, and viewing transactions.
+
+## Program Flow
+
+The program starts by displaying the main menu with 8 options. Based on the user's input, it navigates to the corresponding feature. Some of these features, such as **Send Money**, further ask for additional input (like mobile number and amount).
+
+### Main Menu Options
+
+1. **Send Money**
+2. **Airtime & Bundles**
+3. **MomoPay**
+4. **Payments**
+5. **Savings & Loans**
+6. **Financial Services**
+7. **Withdraw Money**
+8. **My Account**
+
+### Send Money Submenu
+
+- Mobile user
+- East Africa
+- Rest of Africa (Not implemented)
+- Send with Care (Not implemented)
+- Donations (Not implemented)
+
+### Input Validations
+
+- Phone numbers must be exactly 10 digits.
+- Amount must be within a predefined range (500 - 5,000,000).
+- PIN length must be exactly 5 digits.
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/mtn-mobile-money-system.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd mtn-mobile-money-system
+   ```
+
+3. Compile the program:
+   ```bash
+   gcc main.c -o mobile_money
+   ```
+
+4. Run the application:
+   ```bash
+   ./mobile_money
+   ```
+
+## Global Variables
+
+- `int amt`: Used to store the amount of money being sent.
+- `int number`: Stores the recipient's mobile number.
+
+## Limitations
+
+- Only the **Send Money** to mobile users and **East Africa** options are partially implemented.
+- Limited validation on phone numbers and amounts.
+- Some features like **Rest of Africa**, **Send with Care**, and **Donations** are placeholders.
+
+## Future Improvements
+
+- Complete the unimplemented features.
+- Add more robust input validation.
+- Implement more financial services and payment options.
+
+## License
+
+This project is licensed under the MIT License.
